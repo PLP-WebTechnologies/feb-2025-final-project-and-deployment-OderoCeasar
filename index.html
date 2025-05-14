@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding JavaScript Variables</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ceasar Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#post">Post</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="post">
+      <h2>Understanding JavaScript Variables</h2>
+      <p><strong>Date:</strong> May 13, 2025 | <strong>Author:</strong> Ceasar</p>
+
+      <section>
+        <h3>What is a Variable?</h3>
+        <p>A variable in JavaScript is a container for storing data values. You can think of it like a labeled box in which you place information.</p>
+      </section>
+
+      <section>
+        <h3>Types of Variables</h3>
+        <p>There are three main ways to declare variables:</p>
+        <ul>
+          <li><code>var</code> – old way (avoid using in modern JS)</li>
+          <li><code>let</code> – block-scoped, preferred for changeable data</li>
+          <li><code>const</code> – block-scoped, used for constants</li>
+        </ul>
+        <pre><code>
+let name = "Alice";
+const age = 25;
+var message = "Hello";
+        </code></pre>
+      </section>
+
+      <section>
+        <h3>Try It Yourself</h3>
+        <p>Click the button below to see a variable in action:</p>
+        <button onclick="showVariable()">Run Example</button>
+        <p id="output"></p>
+      </section>
+    </article>
+
+    <section id="quiz">
+      <h2>Quick Quiz</h2>
+      <p>Which keyword is best for constants?</p>
+      <button onclick="checkAnswer('var')">var</button>
+      <button onclick="checkAnswer('let')">let</button>
+      <button onclick="checkAnswer('const')">const</button>
+      <p id="quiz-result"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea placeholder="Message..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ceasar Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
